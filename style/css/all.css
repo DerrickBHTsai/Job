@@ -618,7 +618,7 @@ nav .nav_List li {
 /* phone */
 @media (max-width: 767px) {
   .container {
-    max-width: 600px;
+    max-width: 650px;
   }
   nav {
     padding: 0;
