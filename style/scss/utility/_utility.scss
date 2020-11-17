@@ -1,0 +1,125 @@
+
+/* text-align */
+.text-align-left{
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+/* flex */
+.flex {
+    display: flex;
+}
+
+/* direction */
+.flex-direction-row-re{
+    flex-direction: row-reverse;
+}
+
+.flex-direction-col{
+    flex-direction: column;
+}
+
+.flex-direction-col-re{
+    flex-direction: column-reverse;
+}
+
+/* wrap */
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+/* 主軸線對齊 */
+.justify-content-start{
+    justify-content: flex-start;
+}
+
+.justify-content-end{
+    justify-content: flex-end;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-s_between{
+    justify-content: space-between;
+}
+
+.justify-content-s_arround{
+    justify-content: space-around;
+}
+
+.justify-content-s_evenly{
+    justify-content: space-evenly;
+}
+
+/* 交錯軸對齊 */
+.align-items-start{
+    align-items: flex-start;
+}
+
+.align-items-end{
+    align-items: flex-end;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.align-items-stretch{
+    align-items: stretch;
+}
+
+.align-items-baseline{
+    align-items: baseline;
+}
+
+/* 交錯軸對齊(多行) */
+.align-content-start{
+    align-content: flex-start;
+}
+
+.align-content-end{
+    align-content: flex-end;
+}
+
+.align-content-center{
+    align-content: center;
+}
+
+.align-content-s_between{
+    align-content: space-between;
+}
+
+.align-content-s_around{
+    align-content: space-around;
+}
+
+.align-content-stretch{
+    align-content: stretch;
+}
+
+
+/* 交錯軸對齊(單一元件) */
+.align-self-start{
+    align-self: start;
+}
+
+.align-self-end{
+    align-self: end;
+}
+
+.align-self-center{
+    align-self: center;
+}
+
+.align-self-stretch{
+    align-self: stretch;
+}

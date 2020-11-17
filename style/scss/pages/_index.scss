@@ -1,0 +1,346 @@
+
+.banner{
+  height: 840px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $second;
+  .container{
+    height: 100%;
+    padding-right: 39px;
+  }
+}
+
+.features{
+  padding-top: 64px;
+  padding-bottom: 80px;
+  background: #AA06010D;
+  h2{
+    margin-bottom: 60px;
+  }
+  h2,h5{
+    color:$second;
+  }
+  img{
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 39px;
+  }
+  li{
+    width: 23%;
+  }
+}
+
+.classis{
+  padding-top: 64px;
+  padding-bottom: 80px;
+  h2{
+    margin-bottom: 80px;
+    color:$second;
+  }
+  h3{
+    color:$primary;
+  }
+  img{
+    margin-right: 8px;
+  }
+  .optical>img,.functional>img{
+    margin-right: 30px;
+  }
+  .sunglasses>img{
+    margin: 32px 0;
+    margin-left: 30px;
+  }
+  .optical>img,.sunglasses>img,.functional>img{
+    width: 635px;
+  }
+}
+
+.design{
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png");
+  padding-top: 64px;
+  padding-bottom: 80px;
+  h2{
+    color: $third;
+    margin-bottom: 60px;
+  }
+  ul li{
+    position: relative;
+    width: 48%;
+  }
+
+  p{
+    position: absolute;
+    color: $primary;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:72px;
+  }
+}
+
+.costomer{
+  padding: 64px 0;
+  h2{
+    color:$second;
+    margin-bottom: 60px;
+  }
+  li{
+    width: 23.5%;
+    border: 1px solid $sixth;
+    position: relative;
+  }
+  img{
+    height: 256px;
+  }
+  .message{
+    line-height: 24px;
+    padding: 14px 16px 44px;
+  }
+  .name{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+  }
+  .update{
+    color:$fifth;
+    line-height: 21px;
+    position:absolute;
+    bottom:15px;
+  }
+}
+
+.contact{
+  background: $fourth;
+  padding-top: 64px;
+  padding-bottom: 96px;
+  h2{
+    margin-bottom: 24px;
+  }
+  p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  form{
+    margin: 0 auto;
+  }
+  input[type="text"],input[type="mail"],input[type="tel"]{
+    height: 50px;
+  }
+  label{
+    font-weight: bold;
+  }
+  input[type="text"],input[type="mail"],input[type="tel"],textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    background: $fourth;
+  }
+  input[type="checkbox"]{
+    margin-bottom: 42px;
+  }
+  .submit{
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+    padding: 16px 0;
+    background: $primary;
+    color: $third;
+  }
+}
+
+.footer {
+  background: $primary;
+  color: $third;
+  padding-top: 36px;
+  padding-bottom: 30px;
+  padding-right: 39px;
+  padding-left: 39px;
+  a{
+    color: $third;
+    text-decoration: none;
+    display: block;
+  }
+  .link li{
+    margin-right: 48px;
+  }
+  .app li{
+    margin-left: 32px;
+  }
+  .telApp{
+    border-bottom: 1px solid $third;
+    margin-bottom: 30px;
+    p{
+      margin-bottom: 20px;
+    }
+    img{
+      margin-right: 17px;
+      width: 44px;
+      height: 44px;
+    }
+    a{
+      font-size:36px;
+    }
+  }
+  .copyRight{
+  .logo{
+    img{
+      margin-right: 38px;
+    }
+  }
+  li{
+    margin-left: 62px;
+  }
+}
+}
+
+/* pad */
+@media (max-width:992px){
+  .container{
+    max-width: 850px;
+  }
+
+  .features{
+    padding-bottom: 40px;
+    h5{
+      margin-bottom: 8px;
+    }
+    p{
+      margin-bottom: 40px;
+    }
+    ul{
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    li{
+      width: 35%;
+    }
+  }
+  .classis{
+    padding: 40px 39px;
+    li{
+      margin-bottom: 8px;
+    }
+    .optical>img,.sunglasses>img,.functional>img{
+        width: 50%;
+    }
+    .sunglasses{
+      flex-direction: row;
+      >img{
+        margin:0px;
+        margin-right: 30px;
+      }
+    }
+  }
+  .design{
+    .DOUBLE-A p,.YOUTH p{
+      font-size:32px;
+    }
+  }
+  .costomer{
+    padding-bottom: 13px;
+    img{
+      width: 100%;
+      height: auto;
+    }
+    li{
+      width: 50%;
+      height: auto;
+      margin-bottom: 28px; 
+    }
+  }
+}
+
+/* phone */
+@media(max-width:767px){
+  .container{
+    max-width: 600px;
+  }
+  nav{
+    padding: 0;
+    flex-direction: column;
+    .logo{
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      border-bottom: 1px solid $third;
+    }
+    .nav_List{
+      flex-wrap: wrap;
+      li{
+        width:50%;
+        text-align: center;
+        border: 1px solid $third;
+      }
+    }
+  }
+
+  .features{
+    li{
+      width: 100%;
+    }
+  }
+
+  .classis{
+    .optical>img,.sunglasses>img,.functional>img{
+        width: 100%;
+    }
+    li{
+      position: relative;
+    }
+    h3{
+      position: absolute;
+      color: $third;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .design{
+    ul{
+      flex-wrap: wrap;
+      li{
+       width: 90%;
+       margin-bottom: 16px;
+      }
+      .DOUBLE-A p,.YOUTH p {
+        font-size: 45px;
+      }
+    }
+  }
+
+  .costomer{
+    padding-bottom: 13px;
+    img{
+      width: 100%;
+      height: auto;
+    }
+    li{
+      width: 100%;
+      height: auto;
+      margin-bottom: 28px; 
+    }
+  }
+
+  .footer{
+    .link{
+      display: none;
+    }
+    .LinkApp{
+      flex-direction: row-reverse;
+    }
+    // .telApp{
+    //   img{
+    //     width: 20px;
+    //     height: 20px;
+    //   }
+    //   a{
+    //     font-size: 16px;
+    //   }
+    // }
+  }
+
+}
