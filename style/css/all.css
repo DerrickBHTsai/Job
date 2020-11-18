@@ -718,13 +718,6 @@ nav .nav_List li {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .footer .copyRight {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .footer .policy ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -734,6 +727,13 @@ nav .nav_List li {
   }
   .footer .policy ul li {
     margin: 0px;
+  }
+  .footer .copyRight {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer .copyRight .logoLink {
     display: none;

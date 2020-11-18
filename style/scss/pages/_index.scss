@@ -352,9 +352,6 @@
     .LinkInfo{
       flex-direction: row-reverse;
     }
-    .copyRight{
-      flex-direction: column;
-    }
     .policy{
       ul{
         flex-direction: column;
@@ -364,6 +361,7 @@
       }
     }
     .copyRight{
+      flex-direction: column;
       .logoLink{
         display: none;
       }
