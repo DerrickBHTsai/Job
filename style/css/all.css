@@ -518,6 +518,10 @@ nav .nav_List li {
   display: block;
 }
 
+.footer .link {
+  margin-bottom: 36px;
+}
+
 .footer .link li {
   margin-right: 48px;
 }
@@ -526,22 +530,21 @@ nav .nav_List li {
   margin-left: 32px;
 }
 
-.footer .telApp {
-  border-bottom: 1px solid white;
+.footer .telMail {
   margin-bottom: 30px;
 }
 
-.footer .telApp p {
+.footer .telMail p {
   margin-bottom: 20px;
 }
 
-.footer .telApp img {
+.footer .telMail img {
   margin-right: 17px;
   width: 44px;
   height: 44px;
 }
 
-.footer .telApp a {
+.footer .telMail a {
   font-size: 36px;
 }
 
@@ -551,6 +554,10 @@ nav .nav_List li {
 
 .footer .copyRight li {
   margin-left: 62px;
+}
+
+.footer .copyRight .logoLink_phone {
+  display: none;
 }
 
 /* pad */
@@ -656,6 +663,15 @@ nav .nav_List li {
   .classis .optical > img, .classis .sunglasses > img, .classis .functional > img {
     width: 100%;
   }
+  .classis .optical h3 img {
+    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-diamond-white.svg");
+  }
+  .classis .sunglasses h3 img {
+    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-sun-white.svg");
+  }
+  .classis .functional h3 img {
+    content: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-thunder-white.svg");
+  }
   .classis li {
     position: relative;
   }
@@ -695,12 +711,41 @@ nav .nav_List li {
   .footer .link {
     display: none;
   }
-  .footer .LinkApp {
+  .footer .LinkInfo {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
     -webkit-flex-direction: row-reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+  }
+  .footer .copyRight {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .policy ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .policy ul li {
+    margin: 0px;
+  }
+  .footer .copyRight .logoLink {
+    display: none;
+  }
+  .footer .copyRight .logoLink_phone {
+    display: block;
+  }
+  .footer .copyRight .policy {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=all.css.map */

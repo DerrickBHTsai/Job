@@ -163,14 +163,16 @@
     text-decoration: none;
     display: block;
   }
-  .link li{
-    margin-right: 48px;
+  .link{
+    margin-bottom: 36px;
+    li{
+      margin-right: 48px;
+    }
   }
   .app li{
     margin-left: 32px;
   }
-  .telApp{
-    border-bottom: 1px solid $third;
+  .telMail{
     margin-bottom: 30px;
     p{
       margin-bottom: 20px;
@@ -185,15 +187,18 @@
     }
   }
   .copyRight{
-  .logo{
-    img{
-      margin-right: 38px;
+    .logo{
+      img{
+        margin-right: 38px;
+      }
+    }
+    li{
+      margin-left: 62px;
+    }
+    .logoLink_phone{
+      display: none;
     }
   }
-  li{
-    margin-left: 62px;
-  }
-}
 }
 
 /* pad */
@@ -287,6 +292,21 @@
     .optical>img,.sunglasses>img,.functional>img{
         width: 100%;
     }
+    .optical{
+      h3 img{
+        content:url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-diamond-white.svg");
+      }
+    }
+    .sunglasses{
+      h3 img{
+        content:url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-sun-white.svg");
+      }
+    }
+    .functional{
+      h3 img{
+        content:url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-thunder-white.svg");
+      }
+    }
     li{
       position: relative;
     }
@@ -329,18 +349,31 @@
     .link{
       display: none;
     }
-    .LinkApp{
+    .LinkInfo{
       flex-direction: row-reverse;
     }
-    // .telApp{
-    //   img{
-    //     width: 20px;
-    //     height: 20px;
-    //   }
-    //   a{
-    //     font-size: 16px;
-    //   }
-    // }
+    .copyRight{
+      flex-direction: column;
+    }
+    .policy{
+      ul{
+        flex-direction: column;
+        li{
+          margin: 0px;
+        }
+      }
+    }
+    .copyRight{
+      .logoLink{
+        display: none;
+      }
+      .logoLink_phone{
+        display: block;
+      }
+      .policy{
+        justify-content: space-between;
+      }
+    }
   }
 
 }
